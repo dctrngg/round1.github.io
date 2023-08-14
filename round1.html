@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        :root {
+          font-size: 20px;
+          box-sizing: inherit;
+        }
+        
+        *,
+        *:before,
+        *:after {
+          box-sizing: inherit;
+        }
+        
+        p {
+          margin: 0;
+        }
+        
+        p:not(:last-child) {
+          margin-bottom: 1.5em;
+        }
+        
+        img{
+            max-width: 10%;
+            padding-bottom: 20px;;
+        }
+        
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .social-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        body {
+          color: #224;
+          background: url(https://source.unsplash.com/E8Ufcyxz514/2400x1823) center / cover no-repeat fixed;
+        }
+        
+        
+        
+        .quote{
+          font: 1em/1.618 Inter, sans-serif;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+        }
+        
+        .card {
+          position: relative;
+          max-width: 300px;
+          min-height: 200px;
+          display:flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-top: 50px;
+          max-width: 500px;
+          height: 250px;
+          padding: 35px;
+        
+          border: 1px solid rgba(255, 255, 255, .25);
+          border-radius: 20px;
+          background-color: rgba(255, 255, 255, 0.35);
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+          backdrop-filter: blur(15px);
+        }
+        
+        .card-footer {
+          font-size: 0.65em;
+          color: #446;
+        }
+        
+        
+        .center{
+          margin-left: 50px;
+          margin-top: 50px;
+          font-family:sans-serif;
+          position:absolute;
+          top:50%;
+          left:50%;
+          transform:prespective(1000px) translate(-50%,-50%);
+          transform:skewY(15deg);
+          transition:0.5s;
+        }
+        
+        .center:hover{
+          transform:prespective(1000px) translate(-50%,-50%);
+          transform:skewY(0deg);
+        }
+        
+        .center h1 span{
+          position:absolute;
+          top:0;
+          left:0;
+          transform:translate(-50%,-50%);
+          margin:0;
+          padding:0;
+          text-transform:uppercase;
+          font-size:12em;
+          color:#fff;
+          transform-style:preserve-3d;
+          transition:0.8s;
+          
+        }
+        .center h1 span:nth-child(1){
+          clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+        }
+        
+        
+        .center h1 span:nth-child(2){
+          color:#5E17EB;
+          transform:translate(-50%,-50%) skewX(-60deg);
+          left:-38px;
+          clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+        }
+        
+        .center h1 span:nth-child(3){
+          transform:translate(-50%,-50%) skewY(0deg);
+          left:-76px;
+          clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+        }
+        
+        .center:hover h1 span:nth-child(2), 
+        .center:hover h1 span:nth-child(3){
+          transform:translate(-50%,-50%) skewX(0deg);
+          left:0;
+          color:#fff;
+        }
+        
+        
+        .content-1{
+            position: relative;
+            margin-top: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 70px;
+            font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+            color: #fff;
+        }
+        .content-2{
+            margin-top: -150px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+            color: #fff;
+        }
+        
+        .content-3{
+            margin-top: -50px;
+            font-size: smaller;
+            color:white;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin-left: 250px;
+            margin-right: 250px;
+            text-align: center;
+            border-top:1px solid #fff;
+            padding-top: 25px;
+            border-bottom:1px solid #fff;
+            padding-bottom: 25px;
+        }
+        
+        
+        .content-4{
+            position: relative;
+            margin-top: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 120px;
+            font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+            color: #fff;
+        }
+        
+        .link{ 
+            color: #fff;
+        }
+        
+        </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <img src="img/logo hvc final-02.png" alt="">
+        <div class="social-icon"> 
+            <a href="" class="fab fa-facebook"></a>
+            <a href="" class="fab fa-instagram"></a>
+            <a href="" class="fab fa-facebook"></a>
+        </div>
+    </div>
+
+   <div class="center">
+    <h1>
+      <span>hvc</span>
+      <span>hvc</span>
+      <span>hvc</span>
+    </h1>
+  </div>
+
+  <div class="content-1">
+        <div>
+            <h2>Member Recruitment</h2>
+        </div>
+  </div>
+
+  <div class="content-2">
+        <h3>FIRST ROUND RESULT</h3>
+  </div>
+
+  <div class="content-3">
+        <p>Lời đầu tiên, <strong>Hùng Vương Concert</strong>  xin chân thành cảm ơn bạn đã dành sự quan tâm đến đợt tuyển thành viên năm nay của chương trình. Là một người trẻ tuổi đầy nhiệt huyết và tham vọng, bạn đã dũng cảm bước ra khỏi vùng an toàn của chính mình và thử thách bản thân với vòng đầu của đợt tuyển thành viên năm nay. Dù cho kết quả có như thế nào, Hùng Vương Concert hy vọng bạn vẫn luôn giữ cho bản thân mình ngọn lửa nhiệt huyết ấy và đừng ngần ngại thử thách bản thân với những lĩnh vực mới. </p>
+  </div>
+
+
+    <div class="quote">
+    <div class="card">
+        <p>HVC chúng mình không tìm <strong><strike>Người giỏi nhất</strike></strong>, chúng mình tìm <strong>Người phù hợp nhất</strong></p>
+        <p class="card-footer">Hung Vuong Concert: Delight.</p>
+      </div>
+    </div>
+
+    <div class="content-4">
+        <div>
+            <h2>PASS</h2>
+        </div>
+  </div>
+
+  <div class="content-3">
+    <p>Để có thể tiếp tục tham gia vòng Teamwork, bạn vui lòng nhấn vào  <a class="link" href="https://www.facebook.com/profile.php?id=100008659365023"> <strong>link dưới đây</strong></a> để có thể tham gia nhóm Facebook của chương trình. Đây là nhóm dùng để phố biến các thông tin về buổi INFORMATION DAY và đề bài vòng 2, vì thế hãy thường xuyên theo dõi các bài đăng trong nhóm để tránh bỏ lỡ những thông tin quan trọng</p>
+  </div>
+</body>
+</html>
+
+
